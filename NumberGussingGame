@@ -1,0 +1,27 @@
+#include<iostream>
+#include<ctime>
+#include<cstdlib>
+int main()
+{
+srand(time(0));
+int secretnum=rand()%100+1;
+int guess;
+int attempts=0;
+cout<<"Try to guess the secret number ";
+do{
+cout<<"Enter your guess"<<endl;
+cin>>guess;
+attempts++;
+if(guess==secretnum){
+cout<<"congratulations!You guessed the right number in"<<attempts<<"attempts"<<endl;
+
+}
+else if(guess<secretnum){
+cout<<"Too low";
+}else{
+"Too high";
+}
+}while(guess!=secretnum);
+return o;
+
+}
